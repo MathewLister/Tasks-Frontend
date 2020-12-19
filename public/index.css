@@ -1,0 +1,148 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 30px;
+  background-color: white;
+  color: #f9f9f9;
+}
+
+.container-center {
+  border-radius: 25px;
+  margin: auto;
+  width: 50%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding: 10px;
+  box-shadow: 1px 2px 3px #888888;
+  background-color: #f9f9f9;
+  color: #212121;
+  position: relative;
+}
+
+.title {
+  font-family: "Roboto";
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: center;
+  background-color: #ffc107;
+  border-top: 15px solid #ffa000;
+  color: #f9f9f9;
+  margin: -10px;
+  padding: -5px;
+  position: relative;
+  border-radius: 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#nameBlurred {
+  opacity: 0.3;
+  color: #757575;
+}
+
+#nameUnblurred {
+  opacity: 1;
+}
+
+.todo-container {
+  display: flex;
+}
+
+dt {
+  transition: all 0.1s ease-in-out;
+  padding: 5px;
+  color: #212121;
+  width: 100%;
+}
+
+dt:hover {
+  box-shadow: 1px 2px 3px #888888;
+  border-radius: 25px;
+}
+
+#description {
+  margin: auto;
+  width: inherit;
+  margin-top: 5%;
+  padding: 10px;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 1px 2px 3px #888888;
+}
+
+.form-input {
+  font-family: "Roboto";
+  font-size: 15px;
+  border-radius: 25px;
+  background-color: #f9f9f9;
+  border: 2px solid #f9f9f9;
+  padding: 20px;
+  width: 200px;
+  height: 15px;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 40px;
+  transition: all 0.1s ease-in-out;
+}
+
+.form-input:hover,
+.form-input:focus {
+  box-shadow: 1px 2px 3px #888888;
+  outline: none;
+  transform: scale(1.05);
+}
+
+#submit {
+  width: 70px;
+  height: 70px;
+  background-color: #212121;
+  border-radius: 50%;
+  box-shadow: 1px 2px 3px #888888;
+  transition: all 0.1s ease-in-out;
+
+  font-size: 30px;
+  color: #f9f9f9;
+  text-align: center;
+  line-height: 70px;
+  right: 40px;
+  bottom: 30px;
+  position: absolute;
+}
+
+#submit:hover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.remove {
+  position: relative;
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+  cursor: pointer;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+  outline: none;
+}
+
+.remove:hover {
+  background-color: #ccc;
+}
+
+.remove:focus {
+  background-color: #ffa000;
+}
+
+@media only screen and (max-device-width: 900px) {
+  /* For mobile phones: */
+  .container-center {
+    width: 95%;
+    margin-top: 0;
+  }
+}
